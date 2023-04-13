@@ -1,4 +1,5 @@
 import React from 'react'
+import squad from '../data/squad'
 
 function SquadPage() {
     return (
@@ -20,16 +21,20 @@ function SquadPage() {
             </section>
             <section class="p-5">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 object-cover overflow-hidden">
-                    <div class="w-full h-96 overflow-hidden object-cover relative group transition ease-in-out duration-1000 rounded-md hover:shadow-lg">
-                        <img class="hover:scale-105 w-full transition ease-in-out duration-1000" src="images/players/m.jpg" alt=""/>
-                            <div class="absolute bottom-0 bg-slate-500 w-full flex justify-between text-white p-2 opacity-75 font-semibold text-xl group-hover:opacity-100 transition ease-in-out duration-1000">
-                                <div><p>Didier Deschamps</p></div>
-                                <div><p>Manager</p></div>
-                            </div>
-                    </div>
-                    
+                    {
+                        squad.map((item) => {
+                            return (
+                                <div class="w-full h-96 overflow-hidden object-cover relative group transition ease-in-out duration-1000 rounded-md hover:shadow-lg">
+                                    <img class="hover:scale-105 w-full transition ease-in-out duration-1000" src={item.img} alt={item.name} />
+                                    <div class="absolute bottom-0 bg-slate-500 w-full flex justify-between text-white p-2 opacity-75 font-semibold text-xl group-hover:opacity-100 transition ease-in-out duration-1000">
+                                        <div><p>{item.name}</p></div>
+                                        <div><p>{item.number}</p></div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
-
             </section>
         </main>
     )
