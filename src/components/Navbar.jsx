@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
+    const [showMenu, setShowMenu] = useState(false)
+    const toggleMenu = () => {
+        setShowMenu(!showMenu)
+    }
     return (
         <header>
             <div className="h-1 flex">
@@ -18,7 +22,7 @@ function Navbar() {
             <div className="flex justify-between bg-slate-900 p-4">
                 <div className="flex justify-between items-center">
                     <div><img className="h-12 cursor-pointer hover:scale-110 ease-in-out duration-300 transition"
-                        src="images/logo.png" alt=""/>
+                        src="images/logo.png" alt="" />
                     </div>
                     <div className="px-4 ">
                         <Link to="/"
@@ -37,7 +41,7 @@ function Navbar() {
                             className="text-white font-mono border-b-2 border-transparent hover:border-purple-100 ease-in-out duration-300 transition">GALLERY</Link>
                     </div>
                 </div>
-                <div className="flex md:hidden">
+                <div className="flex md:hidden" onClick={toggleMenu}>
                     <svg className="fill-current text-white w-5" id="breadButton" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20">
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -65,6 +69,20 @@ function Navbar() {
                     <p>&nbsp;</p>
                 </div>
             </div>
+            {
+                showMenu &&
+                <div id="mobileNav" class="absolute top-20 z-10 w-full ">
+                    <div class="md:hidden flex flex-col justify-between items-start py-2 bg-slate-900">
+                        <div class="px-4 pb-2">
+                            <Link to="/squad" onClick={toggleMenu} class="text-white font-mono hover:scale-105 ease-in-out duration-300 transition">SQUAD</Link>
+                        </div>
+                        <div class="px-4 py-2">
+                            <Link to="/gallery" onClick={toggleMenu}
+                                class="text-white font-mono hover:scale-105 ease-in-out duration-300 transition">GALLERY</Link>
+                        </div>
+                    </div>
+                </div>
+            }
         </header>
     )
 }
