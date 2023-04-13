@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import card1 from "../images/card1.jpg";
@@ -15,10 +15,10 @@ import sponsor2 from "../images/sponsors/nike.png"
 import sponsor3 from "../images/sponsors/uber-eats.png"
 import sponsor4 from "../images/sponsors/vw.png"
 import sponsor5 from "../images/sponsors/edf.png"
+import { Link } from 'react-router-dom';
 
 
 function HomePage() {
-
     return (
         <main className="bg-slate-900 relative">
             <div id="mobileNav" className="absolute z-10 w-full hidden">
@@ -34,7 +34,7 @@ function HomePage() {
                 </div>
             </div>
             <section className="h-full ">
-                <div className="">                    
+                <div>
                     <Carousel autoPlay infiniteLoop showThumbs={false} emulateTouch showStatus={false} showIndicators={false}>
                         <div className="relative overflow-hidden mySlides fade h-[50vh] md:h-[80vh]">
                             <img src={slide1} alt="background"
@@ -97,8 +97,8 @@ function HomePage() {
                             </a>
                             <figcaption className="absolute bottom-6 px-4 text-lg w-full text-white">
                                 <div className="flex justify-end w-full">
-                                    <a href="team.html" className="bg-red-700 p-1 px-2 font-semibold text-sm rounded-sm">VIEW
-                                        SQUAD</a>
+                                    <Link to="/squad" className="bg-red-700 p-1 px-2 font-semibold text-sm rounded-sm">VIEW
+                                        SQUAD</Link>
                                 </div>
                             </figcaption>
                         </figure>
@@ -129,8 +129,8 @@ function HomePage() {
                             </a>
                             <figcaption className="absolute bottom-6 px-4 text-lg w-full text-white">
                                 <div className="flex justify-end w-full">
-                                    <a href="gallery.html" className="bg-red-700 p-1 px-2 font-semibold text-sm">VIEW
-                                        GALLERY</a>
+                                    <Link to="/gallery" className="bg-red-700 p-1 px-2 font-semibold text-sm">VIEW
+                                        GALLERY</Link>
                                 </div>
                             </figcaption>
                         </figure>
