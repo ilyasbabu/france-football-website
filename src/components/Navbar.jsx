@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     return (
@@ -20,20 +21,20 @@ function Navbar() {
                         src="images/logo.png" alt=""/>
                     </div>
                     <div className="px-4 ">
-                        <h1
+                        <Link to="/"
                             className="cursor-pointer text-white font-mono md:text-lg hover:font-semibold ease-in-out duration-300 transition">
                             FRANCE
-                            FOOTBALL FEDERATION</h1>
+                            FOOTBALL FEDERATION</Link>
                     </div>
                 </div>
                 <div className="md:flex justify-between items-center px-7 hidden">
                     <div className="px-4 ">
-                        <a href="team.html"
-                            className="text-white font-mono border-b-2 border-transparent hover:border-purple-100 ease-in-out duration-300 transition">SQUAD</a>
+                        <Link to="/squad"
+                            className="text-white font-mono border-b-2 border-transparent hover:border-purple-100 ease-in-out duration-300 transition">SQUAD</Link>
                     </div>
                     <div className="px-4 ">
-                        <a href="gallery.html"
-                            className="text-white font-mono border-b-2 border-transparent hover:border-purple-100 ease-in-out duration-300 transition">GALLERY</a>
+                        <Link to="/gallery"
+                            className="text-white font-mono border-b-2 border-transparent hover:border-purple-100 ease-in-out duration-300 transition">GALLERY</Link>
                     </div>
                 </div>
                 <div className="flex md:hidden">

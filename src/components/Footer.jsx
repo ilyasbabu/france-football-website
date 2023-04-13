@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -7,14 +8,14 @@ function Footer() {
                 <div class="bg-slate-800 flex md:flex-row flex-col items-center justify-evenly p-4">
                     <div class="flex">
                         <div class="px-4 ">
-                            <a href="team.html"
+                            <Link to="/squad"
                                 class="text-white text-sm font-mono border-b-2 border-transparent hover:border-slate-500 ease-in-out duration-300 transition">
-                                SQUAD</a>
+                                SQUAD</Link>
                         </div>
                         <div class="px-4 ">
-                            <a href="gallery.html"
+                            <Link href="/gallery"
                                 class="text-white text-sm font-mono border-b-2 border-transparent hover:border-slate-500 ease-in-out duration-300 transition">
-                                GALLERY</a>
+                                GALLERY</Link>
                         </div>
                     </div>
                     <div>
