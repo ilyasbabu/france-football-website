@@ -3,7 +3,7 @@ import SquadPage from './pages/SquadPage';
 import GalleryPage from './pages/GalleryPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (

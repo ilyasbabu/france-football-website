@@ -71,14 +71,14 @@ function Navbar() {
             </div>
             {
                 showMenu &&
-                <div id="mobileNav" class="absolute top-20 z-10 w-full ">
-                    <div class="md:hidden flex flex-col justify-between items-start py-2 bg-slate-900">
-                        <div class="px-4 pb-2">
-                            <Link to="/squad" onClick={toggleMenu} class="text-white font-mono hover:scale-105 ease-in-out duration-300 transition">SQUAD</Link>
+                <div id="mobileNav" className="absolute top-20 z-10 w-full ">
+                    <div className="md:hidden flex flex-col justify-between items-start py-2 bg-slate-900">
+                        <div className="px-4 pb-2">
+                            <Link to="/squad" onClick={toggleMenu} className="text-white font-mono hover:scale-105 ease-in-out duration-300 transition">SQUAD</Link>
                         </div>
-                        <div class="px-4 py-2">
+                        <div className="px-4 py-2">
                             <Link to="/gallery" onClick={toggleMenu}
-                                class="text-white font-mono hover:scale-105 ease-in-out duration-300 transition">GALLERY</Link>
+                                className="text-white font-mono hover:scale-105 ease-in-out duration-300 transition">GALLERY</Link>
                         </div>
                     </div>
                 </div>

@@ -93,7 +93,7 @@ function HomePage() {
                         <figure
                             className="relative max-w-sm transition-all duration-300 cursor-pointer filter hover:scale-105 hover:grayscale-0">
                             <a href="team.html">
-                                <img className="rounded-lg " src={card1} alt="image description" />
+                                <img className="rounded-lg " src={card1} alt="squad" />
                             </a>
                             <figcaption className="absolute bottom-6 px-4 text-lg w-full text-white">
                                 <div className="flex justify-end w-full">
@@ -109,7 +109,7 @@ function HomePage() {
                         <figure
                             className="relative max-w-sm transition-all duration-300 cursor-pointer filter hover:scale-105 hover:grayscale-0">
                             <a href="https://www.fff.fr/">
-                                <img className="rounded-lg" src={card2} alt="image description" />
+                                <img className="rounded-lg" src={card2} alt="official website" />
                             </a>
                             <figcaption className="absolute bottom-6 px-4 text-lg w-full text-white">
                                 <div className="flex justify-end w-full">
@@ -125,7 +125,7 @@ function HomePage() {
                         <figure
                             className="relative max-w-sm transition-all duration-300 cursor-pointer filter hover:scale-105 hover:grayscale-0">
                             <a href="gallery.html">
-                                <img className="rounded-lg" src={card3} alt="image description" />
+                                <img className="rounded-lg" src={card3} alt="gallery" />
                             </a>
                             <figcaption className="absolute bottom-6 px-4 text-lg w-full text-white">
                                 <div className="flex justify-end w-full">
@@ -141,8 +141,7 @@ function HomePage() {
             </section>
             <section className="p-12 h-full w-full grid md:grid-flow-col grid-flow-row bg-slate-200">
                 <div className="w-full">
-                    <img className="h-full w-full object-cover object-center" src={section1} alt=""
-                        srcset="" />
+                    <img className="h-full w-full object-cover object-center" src={section1} alt="" />
                 </div>
                 <div className="w-full md:p-12 py-12 md:py-0 flex flex-col justify-center">
                     <h3 className="text-xl font-bold text-slate-700  pb-5">A Glimpse on World Cup</h3>
@@ -189,12 +188,12 @@ function HomePage() {
                         Deschamps, Fabien Barthez, Emmanuel Petit, Marcel Desailly, and Bixente Lizarazu.</p>
                 </div>
                 <div className="w-full">
-                    <img className="h-full w-full object-cover object-center" src={section2} alt="" srcset="" />
+                    <img className="h-full w-full object-cover object-center" src={section2} alt=""  />
                 </div>
             </section>
             <section className="p-12 h-full w-full grid md:grid-flow-col grid-flow-row bg-slate-200">
                 <div className="w-full">
-                    <img className="h-full w-full object-cover object-center" src={section3} alt="" srcset="" />
+                    <img className="h-full w-full object-cover object-center" src={section3} alt=""  />
                 </div>
                 <div className="w-full md:p-12 py-12 md:py-0 flex flex-col justify-center">
                     <h3 className="text-xl font-bold text-slate-700  pb-5">Football in France</h3>
@@ -221,22 +220,22 @@ function HomePage() {
                 <div className="flex justify-center pb-5 font-extrabold md:text-sm text-xs">
                     <div><h5>TEAM PARTNERS</h5></div>
                 </div>
-                <div class="flex items-center justify-center">
-                    <div class="p-2 px-4"><img class="md:h-10 h-5" src={sponsor1} alt="" /></div>
-                    <div class="p-2 px-4"><img class="md:h-10 h-5" src={sponsor2} alt="" /></div>
-                    <div class="p-2 px-4"><img class="md:h-10 h-5" src={sponsor3} alt="" /></div>
-                    <div class="p-2 px-4"><img class="md:h-10 h-5" src={sponsor4} alt="" /></div>
-                    <div class="p-2 px-4"><img class="md:h-10 h-5" src={sponsor5} alt="" /></div>
+                <div className="flex items-center justify-center">
+                    <div className="p-2 px-4"><img className="md:h-10 h-5" src={sponsor1} alt="" /></div>
+                    <div className="p-2 px-4"><img className="md:h-10 h-5" src={sponsor2} alt="" /></div>
+                    <div className="p-2 px-4"><img className="md:h-10 h-5" src={sponsor3} alt="" /></div>
+                    <div className="p-2 px-4"><img className="md:h-10 h-5" src={sponsor4} alt="" /></div>
+                    <div className="p-2 px-4"><img className="md:h-10 h-5" src={sponsor5} alt="" /></div>
                 </div>
             </section>
-            <div class="h-1 flex">
-                <div class="w-1/3 bg-blue-900">
+            <div className="h-1 flex">
+                <div className="w-1/3 bg-blue-900">
                     <p>&nbsp;</p>
                 </div>
-                <div class="w-1/3 bg-white">
+                <div className="w-1/3 bg-white">
                     <p>&nbsp;</p>
                 </div>
-                <div class="w-1/3 bg-red-800">
+                <div className="w-1/3 bg-red-800">
                     <p>&nbsp;</p>
                 </div>
             </div>
