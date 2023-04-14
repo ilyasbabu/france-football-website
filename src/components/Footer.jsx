@@ -13,7 +13,7 @@ function Footer() {
                                 SQUAD</Link>
                         </div>
                         <div className="px-4 ">
-                            <Link href="/gallery"
+                            <Link to="/gallery"
                                 className="text-white text-sm font-mono border-b-2 border-transparent hover:border-slate-500 ease-in-out duration-300 transition">
                                 GALLERY</Link>
                         </div>
@@ -55,7 +55,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="bg-slate-800 flex justify-center items-center p-2">
-                    <p className="text-gray-500 text-xs">All rights reserved 2023</p>
+                    <p className="text-gray-500 text-xs">All rights reserved {new Date().getFullYear()} &#169; Ilyas Babu</p>
                 </div>
                 <div className="h-1 flex">
                     <div className="w-1/3 bg-blue-900">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import logo from "../images/logo.png"
 
 function Navbar() {
     const [showMenu, setShowMenu] = useState(false)
@@ -22,7 +23,7 @@ function Navbar() {
             <div className="flex justify-between bg-slate-900 p-4">
                 <div className="flex justify-between items-center">
                     <div><img className="h-12 cursor-pointer hover:scale-110 ease-in-out duration-300 transition"
-                        src="images/logo.png" alt="" />
+                        src={logo} alt="" />
                     </div>
                     <div className="px-4 ">
                         <Link to="/"
